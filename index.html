@@ -1,0 +1,57 @@
+    <!--CARTAO DE VISITA, TAMAMNHO 160PX POR 90PX-->
+    <!--FOTO DO PERFIL
+        LINK DO LINKEDIN
+        LINK DO GITHUB-->
+    <!--O CARTAO DEVE SER CENTALIZADO NA TELA
+        DEVE HAVER DUAS COLUNAS, UMA PARA A FOTO E OUTRA PARA OS DADOS
+        AO PARESENTAR O LINKS DAS REDES SOCIAIS, APRESENTAR JUNTO A ELES O ICONE DA REDE SOCIAL
+        DEVE SER CRIADO COM CORES LEVES, REPRESENTAR O LIGHT MODE
+        DEVE SER CRIADO UM ESTILO ALTERNATIVO, COM CORES ESCURAS QUE REPRESENTAM O DARK MODE-->
+
+    <!--COLOCAR UM BOTAO SUPERIOR DIREITO PARA ALTERAR ENTRE LIGHT E DARK MODE-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <title> Cartão Visita </title>
+</head>
+<body>
+
+    <!--PARTE PRINCIPAL DO CODIGO-->
+    <section class="cartao">
+        <div id="img">
+            <img src="imagem_rosto.png" alt="imagem do rosto">
+        </div>
+
+
+        <!--Informações GITHUB-->
+        <article class="info">
+            <div id="git">
+                <img id="imgGit" src="git_img.jpg" alt="imagem do github"/>
+                <p> Confira o <a href="https://github.com/Pehzinz" target="_blank">GITHUB</a></p>
+            </div>
+
+            <!---Informações LINKEDIN-->
+            <div id="din">
+                <img id="imgLink" src="link_img.png" alt="imagem do linkedin"/>
+                <p> Confira o <a href="https://www.linkedin.com/in/pedro-henrique-gon%C3%A7alves-ab8301258/" target="_blank"> LINKEDIN
+                </a></p>   
+            </div>
+        </article>
+    </section>
+    <!--PARTE PARA CRIAR O BOTÃO-->
+    <div>
+        <input type="checkbox" class="checkbox" id="chk"/>
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+</body>
+</html>

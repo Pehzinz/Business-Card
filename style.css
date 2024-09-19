@@ -1,0 +1,152 @@
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: #fafafa;
+    transition: background 0.2s linear;
+}
+.cartao{
+    display: flex;
+    background-color: #20B2AA;
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+}
+.cartao  img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    margin: 10px;   
+}
+.info{
+    display: block;
+    margin: 10px;
+    padding: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px ;
+    background-color: #FFFFE0;
+}
+
+/*estilizando o github */
+#git{
+    display: flex;
+    align-items: center;
+}
+#git img{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+#git p, a{
+    font-size:small;
+}
+#git a{
+    text-decoration: underline;
+    color: black;
+}
+
+/*estilizando o linkedin*/
+#din{
+    display: flex;
+    align-items: center;
+}
+/*editando imagem dos icones*/
+#din img{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
+#din p, a{
+    font-size:small;
+}
+#din a{
+    text-decoration: underline;
+    color: black;
+}
+
+/*-------------------ESTILIZANDO A PAGINA DARK MODE-------------------*/
+body.dark{
+    background-color: rgb(34,34,34); /*background da pagina*/
+}
+body.dark .cartao {
+    background-color:#3b3f43;
+}
+body.dark .info{
+    border: 1px solid rgb(173, 83, 225);
+    box-shadow: 5px 5px #111;
+    background-color: rgb(132, 14, 201);
+}
+body.dark p{
+    color: white;
+}
+body.dark .label{
+    background-color: #fff;
+}
+body.dark .label .ball{
+    background-color: #111;
+}
+
+
+/*-------------------ESTILIZANDO O BOTÃO-------------------*/
+.checkbox{
+    opacity: 0;
+    position: absolute; 
+}
+
+/*editando o corpo do botão*/
+.label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 5px;
+    position: relative;
+    margin-left: 20px;
+    height: 26px;
+    width:  50px;
+
+    transform: scale(1.0);
+}
+/*editando a bolinha*/
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+/*quando o checkbox for checado, vamos pegar o (ball) dentro do (label) e fazer ele movimentar suavemente;*/
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+/*add  cor aos icones*/
+.fa-moon{
+    color: rgb(0, 149, 255);  /*lua*/
+}
+.fa-sun{
+    color: #f9c807;  /*sol*/
+}
