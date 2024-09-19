@@ -35,10 +35,6 @@ O projeto inclui os seguintes ficheiros:
 - **script.js**: Pode conter interações em JavaScript, se aplicável.
 - **Imagens**: Imagens como `imagem_rosto.png`, `git_img.jpg`, e `link_img.png` são usadas para o perfil e ícones de redes sociais.
 
-## Captura de Ecrã
-
-![Captura de ecrã](imagem_rosto.png)
-
 ## Personalização
 
 - Substitua `imagem_rosto.png` pela sua própria imagem de perfil.
